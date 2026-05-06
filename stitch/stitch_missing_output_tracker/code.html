@@ -1,0 +1,382 @@
+<html class="scroll-smooth" lang="es"><head></head><body class="antialiased selection:bg-brand-gold selection:text-brand-900">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>José María Alfaro | Representación Inmobiliaria Premium</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            950: '#03060a',
+                            900: '#060B14',
+                            800: '#0B1325',
+                            700: '#152238',
+                            gold: '#D4AF37',
+                            'gold-light': '#F4E5A1',
+                            'gold-dark': '#AA8C2C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        handwriting: ['Caveat', 'cursive'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1.2s cubic-bezier(0.21, 0.45, 0.32, 0.9) forwards',
+                        'shimmer': 'shimmer 2.5s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        shimmer: {
+                            '100%': { transform: 'translateX(100%)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass {
+                @apply bg-white/[0.02] backdrop-blur-2xl border border-white/[0.05] shadow-[inset_0_1px_1px_rgba(255,255,255,0.03)];
+            }
+            .glass-deep {
+                @apply bg-gradient-to-b from-white/[0.03] to-white/[0.01] backdrop-blur-3xl border border-white/[0.06] shadow-[0_30px_60px_rgba(0,0,0,0.4),inset_0_1px_1px_rgba(255,255,255,0.05)];
+            }
+            .text-glow-gold {
+                text-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+            }
+            .bg-radial-gold {
+                background: radial-gradient(circle at center, rgba(212, 175, 55, 0.06) 0%, rgba(139, 90, 43, 0.02) 40%, transparent 70%);
+            }
+            .bg-radial-blue {
+                background: radial-gradient(circle at center, rgba(30, 58, 138, 0.12) 0%, rgba(170, 140, 44, 0.03) 50%, transparent 70%);
+            }
+            .premium-gradient-gold {
+                background: linear-gradient(135deg, #AA8C2C 0%, #D4AF37 50%, #F4E5A1 100%);
+            }
+        }
+        
+        body {
+            background-color: #060B14;
+            color: #ffffff;
+            overflow-x: hidden;
+            font-feature-settings: "ss01", "ss02", "cv01";
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060B14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #152238;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .hero-mask {
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+        }
+    </style>
+<!-- Digital Obsidian Atmospheric Glows -->
+<div class="fixed top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-radial-gold pointer-events-none z-0"></div>
+<div class="fixed bottom-[-20%] right-[-10%] w-[70vw] h-[70vw] bg-radial-blue pointer-events-none z-0"></div>
+<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.02] pointer-events-none z-0"></div>
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 border-b border-white/[0.05] transition-all duration-500 bg-brand-900/40">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 h-24 flex items-center justify-between">
+<div class="flex items-center"><span class="font-serif text-xl md:text-2xl tracking-[0.2em] text-white font-medium">ALFARO <span class="text-brand-gold">&amp;</span> PARTNERS</span></div>
+<nav class="hidden lg:flex items-center space-x-12">
+<a class="group relative py-2" href="#contacto">
+<span class="text-[11px] uppercase tracking-[0.3em] font-medium text-gray-400 group-hover:text-brand-gold transition-colors duration-300">Reservar Cita</span>
+<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-brand-gold transition-all duration-500 group-hover:w-full"></span>
+</a>
+</nav>
+<a class="inline-flex items-center justify-center px-8 py-3 border border-brand-gold/20 text-brand-gold hover:bg-brand-gold hover:text-brand-900 transition-all duration-500 rounded-full font-medium tracking-[0.1em] uppercase text-[10px] glass" href="#contacto">
+                Contacto Directo
+            </a>
+</div>
+</header>
+<main class="relative z-10">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-32 pb-32 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 w-full grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+<!-- Text Content -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-12 animate-fade-in-up" style="animation-delay: 0.1s;">
+<div class="inline-flex items-center space-x-6">
+<div class="h-[1px] w-16 bg-gradient-to-r from-brand-gold to-transparent opacity-70"></div>
+<span class="text-brand-gold uppercase tracking-[0.4em] text-[10px] font-medium">Representación de Alto Nivel</span>
+</div>
+<div class="space-y-4">
+<h1 class="font-serif leading-[1.15] tracking-wide">
+<span class="block text-gray-400 text-2xl md:text-3xl mb-4 font-light italic opacity-80">Hola, soy</span>
+<span class="block text-5xl md:text-7xl lg:text-8xl font-medium">José María</span>
+<span class="block text-5xl md:text-7xl lg:text-8xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#F4E5A1] to-[#AA8C2C] drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]">Alfaro</span>
+</h1>
+</div>
+<p class="text-lg md:text-xl text-gray-400 font-light leading-loose max-w-2xl border-l border-brand-gold/20 pl-8">
+                        Más de 20 años impulsando las buenas prácticas y la transparencia en el sector. Antes de tomar una decisión que afecte a tu patrimonio, habla con alguien que proteja exclusivamente tus intereses.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6 pt-6 items-center sm:items-start">
+<a class="group relative inline-flex items-center justify-center px-10 py-4 premium-gradient-gold text-brand-900 font-semibold rounded-full overflow-hidden transition-all duration-500 hover:shadow-[0_20px_50px_rgba(212,175,55,0.2)]" href="#contacto">
+<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
+<span class="relative tracking-[0.05em] text-sm">AGENDAR ASESORAMIENTO (30 MIN)</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-4 text-white/60 hover:text-white transition-colors tracking-[0.05em] uppercase text-xs font-medium" href="#valor">
+                            Descubrir Metodología
+                        </a>
+</div>
+</div>
+<!-- Editorial Image Treatment -->
+<div class="lg:col-span-5 relative animate-fade-in-up" style="animation-delay: 0.4s;">
+<div class="relative z-10">
+<div class="absolute -top-10 -right-10 w-32 h-32 border-t border-r border-brand-gold/20 hidden xl:block rounded-tr-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 border-b border-l border-brand-gold/20 hidden xl:block rounded-bl-3xl"></div>
+<div class="relative overflow-hidden glass p-3 shadow-2xl animate-float rounded-2xl">
+<img alt="José María Alfaro" class="w-full aspect-[4/5] object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000 hero-mask rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;q=80'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHEGAXLakt5lTFmLyRwrUg-HiRmnqVjnB1u-42_4ZAoql_w2hFlMzhGABX7S05Ees-AgZ1SX18Y3PEuiXK6CJ95ZgwkKm3C1C2DSeVD6DTJERheU214A8PL4K-C8Y54L0HQ926Xe7Z_gUSkogMacgUESoNTjFmxmwXUJgScgyKCUv2HOSKwO7E6R13hGbMuyxsjaIuRE60p_M8nWZMNcnqynr44Z6haKBkBOE8MzbSsD6YVILAl5HKJGcfD9SN2Cw9guJAZZWQRQwO"/>
+</div>
+</div>
+<!-- Floating Stat Badge -->
+<div class="absolute -bottom-8 -right-4 glass p-6 border border-brand-gold/10 z-20 shadow-[0_20px_40px_rgba(0,0,0,0.4)] backdrop-blur-3xl animate-float rounded-xl" style="animation-delay: -3s;">
+<p class="font-serif text-4xl font-medium text-brand-gold mb-2">2004</p>
+<div class="h-[1px] w-10 bg-brand-gold/30 mb-3"></div>
+<p class="text-[9px] text-gray-300 uppercase tracking-[0.3em] leading-relaxed font-medium">Liderazgo<br/>Institucional</p>
+</div>
+</div>
+</div>
+</section><!-- Institutional Ecosystem Section -->
+<section class="relative py-20 bg-brand-950/50 border-y border-white/[0.05] overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16">
+<div class="flex flex-col items-center mb-12">
+<span class="text-brand-gold/50 uppercase tracking-[0.4em] text-[9px] font-medium mb-2">Ecosistema Institucional</span>
+<div class="h-[1px] w-12 bg-brand-gold/20"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/[0.05] rounded-2xl overflow-hidden glass">
+<!-- Nuevo Milenio -->
+<div class="group relative p-10 flex flex-col items-center justify-center text-center transition-all duration-700 hover:bg-white/[0.02] border-b md:border-b-0 md:border-r border-white/[0.05]">
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 shadow-[0_0_15px_rgba(220,38,38,0.5)]"></div>
+<div class="mb-8 transition-all duration-700 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100 transform group-hover:scale-105">
+<img alt="Nuevo Milenio" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uitiApF-h5RqJMcDZW7Plm1PhSquc8CCeu9A5xUqD1yK4kHxXUuwTzKbScnZ8AQ-Vb-Q2vdY7ra21Ad1JP5y-HRsdd4lAJdHencbecypPfvCbrLhsN3qrJgwSVIZadl7Xe3U-ShlGPk-b_TP74bOML27qmi0Rz6udxtCVTgM6MRgFSQLU7gdQxV5V5NmaLJCEBaUrLJ10r5RRp__LU9iRjfpI_q1GCh1CXhJ0Lv2rzEw7ezX8thZR5iHJ21V8y3VeccK8IVe1k3tgM"/>
+</div>
+<h4 class="font-serif text-2xl text-white/80 group-hover:text-white transition-colors mb-2">Nuevo Milenio</h4>
+<p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">Agencia de Representación</p>
+</div>
+<!-- FAI -->
+<div class="group relative p-10 flex flex-col items-center justify-center text-center transition-all duration-700 hover:bg-white/[0.02] border-b md:border-b-0 md:border-r border-white/[0.05]">
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 shadow-[0_0_15px_rgba(6,182,212,0.5)]"></div>
+<div class="mb-8 transition-all duration-700 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100 transform group-hover:scale-105">
+<img alt="FAI" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugtjlsQfIBslLyN1Ss6-TlXbiQcHQQn1zyri0VFeGNcW3sJTlDTj6WL1RS9YYo00nuAQSt-Y9XFfe5ViIQBV_IFxsu8z_9Ug3NrIpMiG9tF2xp_4LCa8bPJCxJfufbhzfYjklkYpNDDsHh6Ik9GbP-_iGYQnw__PgRkKdozhTidpEnGiBpsSWqcC4O0HXPKS6qnDK1cO3WmlL8_w2TUWoIRVreVeXkRoHCGMIp2ZnjW2PlaAlA-G2cnIgF2ImPMwX_1QJhdrdR5fEI"/>
+</div>
+<h4 class="font-serif text-2xl text-white/80 group-hover:text-white transition-colors mb-2">FAI</h4>
+<p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">Federación Nacional</p>
+</div>
+<!-- BPI Madrid -->
+<div class="group relative p-10 flex flex-col items-center justify-center text-center transition-all duration-700 hover:bg-white/[0.02]">
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-magenta-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 shadow-[0_0_15px_rgba(255,0,255,0.5)]" style="background-color: #ff00ff;"></div>
+<div class="mb-8 transition-all duration-700 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100 transform group-hover:scale-105">
+<img alt="BPI Madrid" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiqS-HeL1D4wpWgRo7lmiyqCYzEu2fhAe0o5f8NEZA9OCXOj__w6WgMB-dKR0RNCvDBhE6uDJyPI0s4FV94xh4wfI0VY1tAO_Agad4hI1bfHKfWrR3g9-9SeeA37wfwcLGF_N9_TPKD4qegWq0SJOy0Z4hDo-6jLgPsd5d2vbIo-uO3p-iXBQr6xcNt1xpzczwNz4-mJxM8TmXWVYjUJyKuIr9OYjoogG0o2SOw8oRtf8KOJr--mrhz2muRQ0dvCOWpIRIyC2eiMvM"/>
+</div>
+<h4 class="font-serif text-2xl text-white/80 group-hover:text-white transition-colors mb-2">BPI Madrid</h4>
+<p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">Excelencia Inmobiliaria</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Strip (Hall of Fame) -->
+<div class="border-y border-white/[0.05] bg-brand-950/30 relative overflow-hidden py-4">
+<div class="max-w-[1440px] mx-auto px-8 py-12 flex flex-wrap items-center justify-center lg:justify-between gap-12 lg:gap-8 opacity-70 hover:opacity-100 transition-opacity duration-700">
+<div class="flex flex-col items-center lg:items-start group cursor-default">
+<span class="font-serif text-xl md:text-2xl text-gray-300 group-hover:text-brand-gold transition-colors duration-500 font-light">Presidente FAI</span>
+<span class="text-[9px] text-gray-500 uppercase tracking-[0.4em] mt-3 font-medium">Representación Institucional</span>
+</div>
+<div class="h-12 w-[1px] bg-white/[0.05] hidden lg:block"></div>
+<div class="flex flex-col items-center group cursor-default">
+<span class="font-serif text-xl md:text-2xl text-gray-300 group-hover:text-brand-gold transition-colors duration-500 text-center font-light">Nuevo Milenio &amp; Alquilabien</span>
+<span class="text-[9px] text-gray-500 uppercase tracking-[0.4em] mt-3 font-medium">20+ Años de Dirección General</span>
+</div>
+<div class="h-12 w-[1px] bg-white/[0.05] hidden lg:block"></div>
+<div class="flex flex-col items-center lg:items-end group cursor-default">
+<span class="font-serif text-xl md:text-2xl text-gray-300 group-hover:text-brand-gold transition-colors duration-500 font-light">BPI Madrid</span>
+<span class="text-[9px] text-gray-500 uppercase tracking-[0.4em] mt-3 font-medium">Excelencia en Buenas Prácticas</span>
+</div>
+</div>
+</div>
+<!-- Value Proposition Section -->
+<section class="py-40 relative" id="valor">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 relative z-10">
+<div class="flex flex-col items-center text-center mb-28">
+<span class="text-brand-gold uppercase tracking-[0.5em] text-[10px] font-medium mb-6">Valores Fundamentales</span>
+<h2 class="font-serif text-4xl md:text-6xl mb-8 font-medium tracking-wide">Ética y <span class="text-brand-gold italic">Transparencia</span></h2>
+<div class="h-[1px] w-20 bg-brand-gold/30 mb-8"></div>
+<p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-loose font-light">
+                        Creo firmemente en un modelo inmobiliario profesional, donde la representación exclusiva garantiza que las decisiones se tomen únicamente en beneficio del cliente.
+                    </p>
+</div>
+<div class="grid md:grid-cols-3 gap-12 lg:gap-16">
+<!-- Card 1 -->
+<div class="glass p-12 hover:-translate-y-2 transition-all duration-700 hover:border-brand-gold/20 group relative rounded-2xl">
+<div class="absolute top-0 right-0 p-6 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-700">
+<svg class="w-20 h-20 text-brand-gold" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+</div>
+<div class="w-14 h-14 bg-brand-gold/5 flex items-center justify-center mb-8 group-hover:bg-brand-gold/10 rounded-xl transition-all duration-500">
+<svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl mb-5 text-white group-hover:text-brand-gold transition-colors tracking-wide font-medium">Representación Leal</h3>
+<p class="text-gray-400 text-base leading-loose font-light">Mi lealtad es exclusiva hacia ti y hacia tu patrimonio. Al representar únicamente a una de las partes, evitamos los conflictos de interés habituales.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass p-12 hover:-translate-y-2 transition-all duration-700 hover:border-brand-gold/20 group relative rounded-2xl">
+<div class="absolute top-0 right-0 p-6 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-700">
+<svg class="w-20 h-20 text-brand-gold" fill="currentColor" viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</div>
+<div class="w-14 h-14 bg-brand-gold/5 flex items-center justify-center mb-8 group-hover:bg-brand-gold/10 rounded-xl transition-all duration-500">
+<svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl mb-5 text-white group-hover:text-brand-gold transition-colors tracking-wide font-medium">Mitigación de Riesgos</h3>
+<p class="text-gray-400 text-base leading-loose font-light">En una primera consulta podemos identificar vulnerabilidades legales o financieras que, de pasarse por alto, comprometerían gravemente la operación.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass p-12 hover:-translate-y-2 transition-all duration-700 hover:border-brand-gold/20 group relative rounded-2xl">
+<div class="absolute top-0 right-0 p-6 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-700">
+<svg class="w-20 h-20 text-brand-gold" fill="currentColor" viewbox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-2v-2h2V7h2v4h2v2h-2v4z"></path></svg>
+</div>
+<div class="w-14 h-14 bg-brand-gold/5 flex items-center justify-center mb-8 group-hover:bg-brand-gold/10 rounded-xl transition-all duration-500">
+<svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl mb-5 text-white group-hover:text-brand-gold transition-colors tracking-wide font-medium">Perspectiva Institucional</h3>
+<p class="text-gray-400 text-base leading-loose font-light">Delega la complejidad. Aporto mi experiencia tanto en la gestión empresarial como en la interlocución a nivel nacional para que tú decidas con certezas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Split Section -->
+<section class="py-40 bg-brand-950/40 border-y border-white/[0.05] relative z-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 relative z-10">
+<div class="flex flex-col lg:flex-row gap-20 lg:gap-28 items-center">
+<div class="w-full lg:w-5/12 relative group">
+<div class="absolute -inset-8 bg-brand-gold/5 blur-[120px] rounded-full group-hover:bg-brand-gold/10 transition-all duration-1000"></div>
+<div class="relative overflow-hidden glass p-3 transform lg:-rotate-1 transition-transform duration-700 hover:rotate-0 rounded-2xl">
+<img alt="José María Alfaro en su despacho" class="w-full aspect-[4/5] object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-1000 shadow-2xl rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqBxuO1Y-RB2bxiEY_P2ogO1uJJx4-KXwkdbahKxfCKckIJQTCJ7kVrE8BR4E8Jo-PahgQvPJg-cCKBmtqi5VtZh1GOUJDBo_qdGOM2JL-CUNes364ooGuyDJkurQIhXOcEelSF5ROPQF5zzBizoyX6pvIabGVHjsnrKTQFHQ_Xaq86qhWsvqgN0dpgIpuc3Z_o5BxhhJr0AQ9IKzq0vTh6ZrdVWcgZ0aa1fWxkAfWFWRqoOzOjy3NiVLLfH-iUKwv9_hgyzwTsS5h"/>
+</div>
+</div>
+<div class="w-full lg:w-7/12 space-y-12">
+<div>
+<h2 class="font-serif text-3xl md:text-5xl lg:text-5xl leading-[1.3] font-medium italic text-gray-100 mb-8">
+                                "El rigor profesional y la ética no son opciones, son la base de cualquier decisión que <span class="text-brand-gold not-italic">proteja tu patrimonio</span>."
+                            </h2>
+<div class="font-handwriting text-3xl text-brand-gold/80 mb-8 opacity-80">José María Alfaro</div>
+</div>
+<p class="text-gray-400 text-lg md:text-xl font-light leading-loose">
+                            Llevo desde 2004 al frente de Nuevo Milenio y como firme defensor de las Buenas Prácticas Inmobiliarias en Madrid y a nivel nacional. He visto a demasiadas familias asumir riesgos innecesarios por falta de rigor en la intermediación.
+                        </p>
+<div class="space-y-8 py-4">
+<div class="flex items-start gap-6 group">
+<div class="w-10 h-10 glass border-brand-gold/20 flex items-center justify-center shrink-0 group-hover:bg-brand-gold/10 transition-colors duration-500 rounded-full">
+<span class="text-brand-gold font-medium text-sm">01</span>
+</div>
+<div>
+<h4 class="text-white font-medium tracking-widest text-[10px] uppercase mb-2">Análisis Estratégico</h4>
+<p class="text-gray-400 text-sm font-light leading-relaxed">Estudio exhaustivo de viabilidad y situación patrimonial real.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-10 h-10 glass border-brand-gold/20 flex items-center justify-center shrink-0 group-hover:bg-brand-gold/10 transition-colors duration-500 rounded-full">
+<span class="text-brand-gold font-medium text-sm">02</span>
+</div>
+<div>
+<h4 class="text-white font-medium tracking-widest text-[10px] uppercase mb-2">Blindaje Legal</h4>
+<p class="text-gray-400 text-sm font-light leading-relaxed">Prevención activa de riesgos legales y financieros de alto impacto.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-10 h-10 glass border-brand-gold/20 flex items-center justify-center shrink-0 group-hover:bg-brand-gold/10 transition-colors duration-500 rounded-full">
+<span class="text-brand-gold font-medium text-sm">03</span>
+</div>
+<div>
+<h4 class="text-white font-medium tracking-widest text-[10px] uppercase mb-2">Representación</h4>
+<p class="text-gray-400 text-sm font-light leading-relaxed">Trazado de estrategia de representación exclusiva a medida.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Contact Section -->
+<section class="py-48 relative overflow-hidden z-10 bg-brand-950 shadow-[inset_0_40px_60px_-20px_rgba(0,0,0,0.8)]" id="contacto">
+<div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-20"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-gold/5 blur-[150px] rounded-full pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<span class="text-brand-gold uppercase tracking-[0.5em] text-[10px] font-medium mb-8 block">Comienza aquí</span>
+<h2 class="font-serif text-5xl md:text-7xl mb-10 tracking-wide font-medium">Agenda una <span class="italic text-brand-gold">conversación</span></h2>
+<p class="text-xl text-gray-400 mb-16 font-light leading-loose max-w-2xl mx-auto">
+                    30 minutos que pueden redefinir el éxito de tu operación inmobiliaria. Rigor absoluto, compromiso cero.
+                </p>
+<div class="relative overflow-hidden group rounded-r-3xl rounded-l-md mx-auto max-w-3xl transition-transform duration-700 hover:-translate-y-2 shadow-[0_30px_60px_rgba(0,0,0,0.7),-10px_0_20px_rgba(0,0,0,0.5)] border border-white/[0.05] border-l-8 border-l-[#03060a]" style="background-image: linear-gradient(to right, rgba(3, 6, 10, 0.98) 0%, rgba(6, 11, 20, 0.85) 100%), url('https://lh3.googleusercontent.com/aida/ADBb0uhNkG61ZMfBvqZA9y8VsdCYjpcVde35LgMC-A3QcCuSf9PBqZ7XFNRO4v6YS2lIIhsTBZcgAdJ7R5Z2nveyaviEs-4mJdVeALNfuNubKMQyTscGBO6YfSp_t7UNLiD9LFwXeMahoWO8VVNozhuHwSx_CV3RqKmX6IzFsh2b9hf14StSHQmHb7Hgkni7nodOcjOhbQn59xZtT2nD5o-upAdRikVFVfAj55dy6nsg4tmKNUJMnWNIrt3JJxNaG6tTJHhJS_h2Sa-pD1U'); background-size: cover; background-position: center;">
+<div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black/60 to-transparent z-0 pointer-events-none"></div>
+<div class="absolute right-6 top-0 bottom-0 w-[2px] bg-white/10 z-0"></div><div class="absolute right-8 top-0 bottom-0 w-3 bg-gradient-to-b from-[#AA8C2C] via-[#D4AF37] to-[#AA8C2C] shadow-[2px_0_15px_rgba(0,0,0,0.8),inset_1px_0_1px_rgba(255,255,255,0.3)] z-0"></div>
+<div class="absolute inset-0 bg-brand-gold/[0.01] group-hover:bg-brand-gold/[0.03] transition-all duration-700 z-0"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-8 justify-center items-center p-10 md:p-16 pr-16 md:pr-24">
+<a class="w-full md:w-auto px-10 py-5 premium-gradient-gold text-brand-900 font-medium rounded-xl hover:shadow-[0_15px_30px_rgba(212,175,55,0.25)] transition-all duration-500 text-xs tracking-[0.15em] uppercase flex-1" href="#">
+                            Abrir Calendario Profesional
+                        </a>
+<span class="text-gray-500 text-xs uppercase tracking-widest hidden md:block">o</span>
+<a class="w-full md:w-auto px-10 py-5 border border-brand-gold/20 text-brand-gold hover:bg-brand-gold/5 transition-all duration-500 rounded-xl text-xs tracking-[0.15em] uppercase flex items-center justify-center gap-3 glass flex-1 bg-black/20" href="https://wa.me/34600000000" target="_blank">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path>
+</svg>
+                            WhatsApp Directo
+                        </a>
+</div>
+</div>
+<p class="mt-12 text-gray-500 italic font-serif text-lg font-light">Confidencialidad absoluta garantizada.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/[0.05] py-16 text-gray-500 text-[10px] uppercase tracking-[0.2em] bg-brand-950/80 relative z-20">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<img alt="Alfaro &amp; Partners" class="h-6 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" onerror="this.outerHTML='&lt;span class=\'font-serif text-lg tracking-widest text-white/50\'&gt;ALFARO &amp; PARTNERS&lt;/span&gt;'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwYOf4SwkpszBEUPUImZ5ZdzoSSs6lNTM6lgyGlCMfjBaj9Dah4M2LprLrf1eXDH119OfHHoYLTOCOFZr4cV4lW7-CgR-2SYQgVuT_prjLDtKTiNi5eU9B8X2VURR3Pr7BDkHVEopeHiIjmEWH5wHAOgHEEeTzgH4G8-6aOV6A2fou4vNHnpJ0nEMm5fboVzE4CcSbqibqxz08wuTjHjW5kQCOygYWS_KJ4fHf1Ef_gjAA8CjxV1YNyuVJPiUd2_JBAn0lyjxeywu-"/>
+<p>© 2026 Alfaro &amp; Partners. Todos los derechos reservados.</p>
+</div>
+<div class="flex gap-12 font-medium">
+<a class="hover:text-brand-gold transition-colors" href="#">Aviso Legal</a>
+<a class="hover:text-brand-gold transition-colors" href="#">Política de Privacidad</a>
+<a class="hover:text-brand-gold transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+<!-- Fixed WhatsApp Floating Element -->
+<a class="fixed bottom-10 right-10 bg-[#25D366] text-white p-5 rounded-full shadow-[0_15px_30px_rgba(37,211,102,0.25)] hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden" href="https://wa.me/34600000000">
+<div class="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+<svg class="w-8 h-8 relative z-10" fill="currentColor" viewbox="0 0 24 24">
+</svg></a><div class="fixed top-[20%] right-[-5%] w-[40vw] h-[40vw] bg-brand-gold/5 blur-[120px] rounded-full pointer-events-none z-0"></div><div class="fixed bottom-[10%] left-[5%] w-[30vw] h-[30vw] bg-blue-900/10 blur-[100px] rounded-full pointer-events-none z-0"></div></body></html>
