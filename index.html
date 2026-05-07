@@ -21,18 +21,19 @@
                 extend: {
                     colors: {
                         brand: {
-                            950: '#03060a',
-                            900: '#060B14',
-                            800: '#0B1325',
-                            700: '#152238',
+                            950: '#0e192a',
+                            900: '#0a1424',
+                            800: '#121f33',
+                            700: '#1b2b41',
                             gold: '#D4AF37',
                             'gold-light': '#F4E5A1',
                             'gold-dark': '#AA8C2C',
+                            offwhite: '#eeeceb',
                         }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
+                        serif: ['Times New Roman', 'serif'],
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 1.2s cubic-bezier(0.21, 0.45, 0.32, 0.9) forwards',
@@ -80,10 +81,20 @@
         }
         
         body {
-            background-color: #03060a;
-            color: #ffffff;
+            background-color: #0e192a;
+            color: #eeeceb;
             overflow-x: hidden;
             font-feature-settings: "ss01", "ss02", "cv01";
+        }
+
+        .text-offwhite {
+            color: #eeeceb;
+        }
+
+        .bg-marble {
+            background-image: url('images/marble.png');
+            background-size: cover;
+            background-position: center;
         }
 
         ::-webkit-scrollbar { width: 6px; }
@@ -327,6 +338,16 @@
                             que tú decidas con certezas.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        
+        <!-- Marble Texture Strip -->
+        <section class="h-64 md:h-80 w-full relative overflow-hidden bg-marble border-y border-white/[0.05] shadow-2xl">
+            <div class="absolute inset-0 bg-brand-950/40 backdrop-brightness-75"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="h-[1px] w-1/4 bg-gradient-to-r from-transparent via-brand-gold to-transparent opacity-50"></div>
+                <div class="mx-12 h-4 w-4 border border-brand-gold rotate-45 opacity-40"></div>
+                <div class="h-[1px] w-1/4 bg-gradient-to-r from-transparent via-brand-gold to-transparent opacity-50"></div>
             </div>
         </section>
 
